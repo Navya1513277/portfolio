@@ -32,11 +32,25 @@ body {
     border-radius: 50%;
     border: 3px solid #ddd;
     object-fit: cover;
-    object-position: center 30%; /* Iddi add chesanu - face kindhaki vasthundi */
+    object-position: center 30%;
     margin-bottom: 15px;
 }
 h1 { font-size: 28px; color: #222; margin-bottom: 5px; }
-.subtitle { font-size: 16px; color: #666; }
+.subtitle { font-size: 16px; color: #666; margin-bottom: 15px; }
+
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.resume-btn:hover { background: #218838; }
+
 .section { margin-bottom: 30px; }
 .section h2 {
     font-size: 20px;
@@ -44,6 +58,22 @@ h1 { font-size: 28px; color: #222; margin-bottom: 5px; }
     margin-bottom: 12px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
+}
+
+/* Contact Section */
+.contact-info {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #4facfe;
+}
+.contact-info p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+.contact-info a {
+    color: #0066cc;
+    text-decoration: none;
 }
 
 /* Education button like GitHub/LinkedIn */
@@ -109,45 +139,44 @@ h1 { font-size: 28px; color: #222; margin-bottom: 5px; }
         <img src="./pick2.jpeg" alt="Ponna Navya" class="avatar">
         <h1>Ponna Navya</h1>
         <p class="subtitle">MCA Student</p>
+        <a href="./navya1513.pdf" target="_blank" class="resume-btn">Download Resume</a>
     </div>
 
     <div class="section">
         <h2>About Me</h2>
         <p>
-            I am an MCA student aspiring to become a Data Analyst in AI field.
-            I recently built a "Canteen Pre-Order System" project where I designed MySQL database
-            and wrote queries to analyze student order data. I have hands-on experience with Python,
-            MySQL, HTML, and CSS. I also have some knowledge of Django, Flask, and React frameworks.
-            I enjoy working with data and finding insights that help solve real problems.
+            I am an MCA student passionate about backend development and building scalable web applications. 
+            I have hands-on experience with Python, MySQL, HTML, CSS, Django, React, and Flask. 
+            I recently developed a "Canteen Pre-Order System", a full-stack web application where I used React for frontend, 
+            Flask for backend APIs, and MySQL for database connectivity. I designed the database schema, built REST APIs, 
+            and handled complete frontend-backend integration. I enjoy solving real-world problems through code.
         </p>
     </div>
 
     <div class="section">
         <h2>Education</h2>
-
         <button class="edu-btn" onclick="toggleEducation()">View Education Details</button>
-
         <div class="edu-details" id="eduBox">
             <div class="edu-item">
                 <b>MCA - Master of Computer Applications</b><br>
                 JNTU, Anantapur<br>
-                Mother Theresa Instituite of Engineering and Technology, Palamaner| 2025 - Present<br>
+                Mother Theresa Institute of Engineering and Technology, Palamaner | 2025 - Present<br>
                 Pursuing
             </div>
             <div class="edu-item">
                 <b>BSc - Bachelor of Science</b><br>
                 SV University, Tirupati<br>
-                SV Science and Arts Degree college Tirupati| 2022 - 2025<br>
-                CGPA: 07.60 | 10
+                SV Science and Arts Degree College Tirupati | 2022 - 2025<br>
+                CGPA: 7.60 / 10
             </div>
             <div class="edu-item">
                 <b>Intermediate - MPC</b><br>
-                Govt junior college Girls Chandragiri | 2020 - 2022<br>
+                Govt Junior College Girls Chandragiri | 2020 - 2022<br>
                 Percentage: 54.07%
             </div>
             <div class="edu-item">
                 <b>SSC - 10th Class</b><br>
-                S.P.Z.P Girls High School Chandragiri| 2019 - 2020<br>
+                S.P.Z.P Girls High School Chandragiri | 2019 - 2020<br>
                 Percentage: 91.67%
             </div>
         </div>
@@ -157,18 +186,15 @@ h1 { font-size: 28px; color: #222; margin-bottom: 5px; }
     <h2>Skills</h2>
     <div class="skills">
         <span>Python</span>
+        <span>Flask</span>
+        <span>Django</span>
+        <span>React</span>
         <span>MySQL</span>
+        <span>REST APIs</span>
         <span>HTML</span>
         <span>CSS</span>
-        <span>Data Analysis</span>
-        <span>Excel</span>
-    </div>
-
-    <p style="margin-top: 15px; font-weight: bold; color: #222;">Basics of:</p>
-    <div class="skills">
-        <span>Django</span>
-        <span>Flask</span>
-        <span>React</span>
+        <span>Git</span>
+        <span>Postman</span>
     </div>
     </div>
 
@@ -176,9 +202,19 @@ h1 { font-size: 28px; color: #222; margin-bottom: 5px; }
         <h2>Project</h2>
         <div class="project">
             <b>Canteen Pre-Order System</b>
-            <p>Created database using MySQL for managing student food orders.
-            Used SQL queries to analyze order data and generate reports.</p>
+            <p>Built a full-stack web application using React for frontend, Flask for backend REST APIs, and MySQL for database. 
+            Implemented user authentication, order management, and real-time order tracking. Designed database schema and 
+            handled complete frontend-backend integration.</p>
             <a href="https://github.com/Navya1513277/Canteen-Pre-Order-System" target="_blank">GitHub Link</a>
+        </div>
+    </div>
+
+     <div class="section">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p><b> Email:</b> <a href="mailto:pnavya383@gmail.com">pnavya383@gmail.com</a></p>
+            <p><b> Mobile:</b> <a href="tel:+916305492980">+91 6305492980</a></p>
+           
         </div>
     </div>
 
