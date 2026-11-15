@@ -3,234 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ponna Navya - Portfolio</title>
+<meta name="description" content="Ponna Navya — MCA student focused on Python backend and full-stack development.">
+<title>Ponna Navya | Portfolio & Resume</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-body {
-    background: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-}
-.container {
-    max-width: 700px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ddd;
-    margin-bottom: 30px;
-}
-.avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #ddd;
-    object-fit: cover;
-    object-position: center 30%;
-    margin-bottom: 15px;
-}
-h1 { font-size: 28px; color: #222; margin-bottom: 5px; }
-.subtitle { font-size: 16px; color: #666; margin-bottom: 15px; }
-
-/* Resume Button */
-.resume-btn {
-    display: inline-block;
-    background: #28a745;
-    color: #fff;
-    padding: 10px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-}
-.resume-btn:hover { background: #218838; }
-
-.section { margin-bottom: 30px; }
-.section h2 {
-    font-size: 20px;
-    color: #222;
-    margin-bottom: 12px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-}
-
-/* Contact Section */
-.contact-info {
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
-    border-left: 4px solid #4facfe;
-}
-.contact-info p {
-    margin: 8px 0;
-    font-size: 15px;
-}
-.contact-info a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-/* Education button like GitHub/LinkedIn */
-.edu-btn {
-    display: inline-block;
-    background: #4facfe;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-}
-.edu-btn:hover { background: #3a8fd4; }
-
-/* Education details box - hidden by default */
-.edu-details {
-    display: none;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin-top: 10px;
-}
-.edu-item { margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed #ccc; }
-.edu-item:last-child { border-bottom: none; margin-bottom: 0; }
-.edu-item b { color: #222; }
-
-.skills span {
-    display: inline-block;
-    background: #e8f4ff;
-    color: #0066cc;
-    padding: 5px 12px;
-    margin: 5px 5px 5px 0;
-    border-radius: 4px;
-    font-size: 14px;
-}
-.project {
-    background: #f9f9f9;
-    padding: 15px;
-    border-left: 4px solid #4facfe;
-    margin-top: 10px;
-}
-.project a { color: #0066cc; text-decoration: none; }
-.links { text-align: center; margin-top: 30px; }
-.links a {
-    display: inline-block;
-    background: #4facfe;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-.links a:hover { background: #3a8fd4; }
+:root{--bg:#0b1020;--panel:#121a2d;--panel2:#17233b;--text:#eef3ff;--muted:#aab7d0;--accent:#70e1cf;--line:#263550}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 0%,#1c3150 0,transparent 34%),var(--bg);color:var(--text);font:16px/1.7 Inter,Segoe UI,Arial,sans-serif}.wrap{width:min(1050px,92%);margin:auto}.top{padding:22px 0;border-bottom:1px solid var(--line)}.nav{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.brand{font-weight:800;letter-spacing:.4px}.nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}.nav a:hover{color:var(--accent)}.hero{padding:76px 0 58px;display:grid;grid-template-columns:1.4fr .8fr;gap:32px;align-items:center}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(38px,6vw,64px);line-height:1.08;margin:12px 0}.hero p{color:var(--muted);max-width:650px}.role{font-size:18px;color:#d7e2f7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block;padding:12px 19px;border-radius:10px;text-decoration:none;font-weight:700;background:var(--accent);color:#07121d}.btn.secondary{background:transparent;border:1px solid #47617e;color:var(--text)}.hero-card,.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 18px 45px #0003}.hero-card .initials{font-size:66px;font-weight:900;color:var(--accent);line-height:1}.hero-card p{margin-bottom:0}.section{padding:30px 0}.section h2{font-size:25px;margin:0 0 18px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.muted{color:var(--muted)}.tags{display:flex;gap:9px;flex-wrap:wrap}.tag{background:#1b2c45;border:1px solid #2d4665;color:#dce9ff;border-radius:999px;padding:6px 12px;font-size:14px}.item{padding:17px 0;border-bottom:1px solid var(--line)}.item:last-child{border:0;padding-bottom:0}.item h3{margin:0 0 4px;font-size:18px}.item p{margin:6px 0;color:var(--muted)}ul{margin:9px 0 0;padding-left:20px;color:var(--muted)}li{margin:5px 0}.contact a{color:var(--accent);text-decoration:none}.footer{padding:30px 0 45px;text-align:center;color:var(--muted);border-top:1px solid var(--line);margin-top:30px}
+@media(max-width:720px){.hero{grid-template-columns:1fr;padding:55px 0 35px}.grid{grid-template-columns:1fr}.nav a{margin:0 12px 0 0}}
 </style>
 </head>
 <body>
-<div class="container">
-    <div class="header">
-        <img src="./pick2.jpeg" alt="Ponna Navya" class="avatar">
-        <h1>Ponna Navya</h1>
-        <p class="subtitle">MCA Student</p>
-        <a href="./navya1513.pdf" target="_blank" class="resume-btn">Download Resume</a>
-    </div>
-
-    <div class="section">
-        <h2>About Me</h2>
-        <p>
-            I am an MCA student passionate about backend development and building scalable web applications. 
-            I have hands-on experience with Python, MySQL, HTML, CSS, Django, React, and Flask. 
-            I recently developed a "Canteen Pre-Order System", a full-stack web application where I used React for frontend, 
-            Flask for backend APIs, and MySQL for database connectivity. I designed the database schema, built REST APIs, 
-            and handled complete frontend-backend integration. I enjoy solving real-world problems through code.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Education</h2>
-        <button class="edu-btn" onclick="toggleEducation()">View Education Details</button>
-        <div class="edu-details" id="eduBox">
-            <div class="edu-item">
-                <b>MCA - Master of Computer Applications</b><br>
-                JNTU, Anantapur<br>
-                Mother Theresa Institute of Engineering and Technology, Palamaner | 2025 - Present<br>
-                Pursuing
-            </div>
-            <div class="edu-item">
-                <b>BSc - Bachelor of Science</b><br>
-                SV University, Tirupati<br>
-                SV Science and Arts Degree College Tirupati | 2022 - 2025<br>
-                CGPA: 7.60 / 10
-            </div>
-            <div class="edu-item">
-                <b>Intermediate - MPC</b><br>
-                Govt Junior College Girls Chandragiri | 2020 - 2022<br>
-                Percentage: 54.07%
-            </div>
-            <div class="edu-item">
-                <b>SSC - 10th Class</b><br>
-                S.P.Z.P Girls High School Chandragiri | 2019 - 2020<br>
-                Percentage: 91.67%
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Python</span>
-        <span>Flask</span>
-        <span>Django</span>
-        <span>React</span>
-        <span>MySQL</span>
-        <span>REST APIs</span>
-        <span>HTML</span>
-        <span>CSS</span>        
-    </div>
-    </div>
-
-    <div class="section">
-        <h2>Project</h2>
-        <div class="project">
-            <b>Canteen Pre-Order System</b>
-            <p>Built a full-stack web application using React for frontend, Flask for backend REST APIs, and MySQL for database. 
-            Implemented user authentication, order management, and real-time order tracking. Designed database schema and 
-            handled complete frontend-backend integration.</p>
-            <a href="https://github.com/Navya1513277/Canteen-Pre-Order-System" target="_blank">GitHub Link</a>
-        </div>
-    </div>
-
-     <div class="section">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p><b> Email:</b> <a href="mailto:pnavya383@gmail.com">pnavya383@gmail.com</a></p>
-            <p><b> Mobile:</b> <a href="tel:+916305492980">+91 6305492980</a></p>
-           
-        </div>
-    </div>
-
-    <div class="links">
-        <a href="https://github.com/Navya1513277" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/ponna-navya-19ba1b344" target="_blank">LinkedIn</a>
-    </div>
-</div>
-
-<script>
-function toggleEducation() {
-    var eduBox = document.getElementById("eduBox");
-    if (eduBox.style.display === "block") {
-        eduBox.style.display = "none";
-    } else {
-        eduBox.style.display = "block";
-    }
-}
-</script>
-</body>
-</html>
+<header class="top"><div class="wrap nav"><div class="brand">PONNA NAVYA</div><nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#internships">Internships</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav></div></header>
+<main class="wrap">
+<section class="hero">
+<div><div class="eyebrow">Portfolio · Resume</div><h1>Hello, I'm<br><span style="color:var(--accent)">Ponna Navya.</span></h1><div class="role">MCA Student | Python Backend & Full-Stack Development</div><p>Motivated MCA student interested in building practical web applications using Python, Flask, React and MySQL. I enjoy learning new technologies and turning ideas into useful software.</p><div class="actions"><a class="btn" href="./navya1513.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a><a class="btn secondary" href="#projects">Explore Projects</a></div></div>
+<aside class="hero-card"><div class="initials">PN.</div><h2>Developer in progress</h2><p class="muted">Focused on backend development, full-stack web applications and continuous learning.</p><p class="muted">✉ pnavya383@gmail.com<br>☎ +91 6305492980</p></aside>
+</section>
+<section class="section" id="about"><h2>Career Objective</h2><div class="card"><p class="muted">To hold a responsible position in an esteemed organization that makes optimum use of my knowledge and skills and helps me grow professionally.</p></div></section>
+<section class="section" id="skills"><h2>Technical Skills</h2><div class="card"><div class="tags"><span class="tag">Python</span><span class="tag">Django (Basics)</span><span class="tag">Flask (Basics)</span><span class="tag">React (Basics)</span><span class="tag">MySQL</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Excel</span><span class="tag">Power BI</span></div><h3>Soft Skills</h3><p class="muted">Quick learner · Hard-working · Self-motivated · Focused · Dedicated</p></div></section>
+<section class="section" id="internships"><h2>Internship Experience</h2><div class="grid">
+<div class="card"><h3>Python Full Stack Internship</h3><ul><li>Learned HTML, CSS and JavaScript for frontend development.</li><li>Learned Python, Django and React for full-stack web development.</li><li>Learned Flask APIs for backend API development.</li></ul></div>
+<div class="card"><h3>Data Science and Python Internship</h3><ul><li>Learned Python for data analysis and programming.</li><li>Learned SQL for database querying and data handling.</li><li>Learned Power BI for data visualization and reporting.</li></ul></div>
+</div></section>
+<section class="section" id="projects"><h2>Projects</h2>
+<div class="card item"><h3>Canteen Pre-Order System</h3><p>Python · React · MySQL · APIs</p><ul><li>Developed a full-stack web application for college canteen online ordering.</li><li>Implemented user authentication, a dynamic menu, cart system and admin dashboard.</li><li>Integrated a MySQL database for secure storage of user and order data.</li></ul><p><a href="https://github.com/Navya1513277/Canteen-Pre-Order-System" style="color:var(--accent)" target="_blank" rel="noopener">View project on GitHub ↗</a></p></div>
+<div class="card item" style="margin-top:16px"><h3>Personal Portfolio Website</h3><p>HTML · CSS · GitHub Pages</p><ul><li>Designed and deployed a responsive personal portfolio to showcase skills and projects.</li><li>Created a mobile-friendly layout with clean navigation.</li></ul></div>
+</section>
+<section class="section" id="education"><h2>Education</h2><div class="card">
+<div class="item"><h3>Master of Computer Applications (MCA)</h3><p>2025 – Pursuing · Percentage: 8.14</p><p>Mother Theresa Institute of Engineering & Technology, JNTU Anantapur, Palamaner</p></div>
+<div class="item"><h3>B.Sc. MSCs</h3><p>2022 – 2025 · GPA: 7.60</p><p>SV University, SV Science & Arts Degree College, Tirupati</p></div>
+</div></section>
+<section class="section"><h2>Certifications</h2><div class="card"><div class="tags"><span class="tag">Python Full Stack</span><span class="tag">Data Science with Python</span></div></div></section>
+<section class="section contact" id="contact"><h2>Contact</h2><div class="card"><p>Email: <a href="mailto:pnavya383@gmail.com">pnavya383@gmail.com</a></p><p>Phone: <a href="tel:+916305492980">+91 6305492980</a></p><p>GitHub: <a href="https://github.com/Navya1513277" target="_blank" rel="noopener">Navya1513277</a></p><p>LinkedIn: <a href="https://www.linkedin.com/in/ponna-navya-19ba1b344" target="_blank" rel="noopener">Ponna Navya</a></p></div></section>
+</main><footer class="footer"><div class="wrap">© 2026 Ponna Navya · Personal Portfolio</div></footer>
+</body></html>
